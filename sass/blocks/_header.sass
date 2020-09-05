@@ -1,0 +1,103 @@
+.header
+  background-color: $white
+  
+  &-upper
+    
+    display: flex
+    min-height: 51px
+    justify-content: space-between
+    border-bottom: 1px solid $grey
+  &-left
+    display: flex
+    align-items: center
+    
+  &-right
+    display: flex
+    align-items: flex-end
+  &-subscribe
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    // height: 100%
+    align-content: space-around
+    padding-bottom: 9px
+    min-width: 119px
+    margin-left: 13px
+    
+    &__main-title
+      
+      font-size: 12px;
+      line-height: 15px;
+      color: #262D33;
+      flex-basis: 100%
+    &__secondary-title
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: $grey_text
+  &__button
+    background-color: $white
+    margin-right: 16px
+    padding: 0
+    width: 18px
+    height: 14px
+    
+  &__menu-title
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    color: $bb
+    margin-right: 52.3px
+    position: relative
+    display: block
+    &::after
+      content: ""
+      position: absolute
+      width: 1px
+      height: 51px
+      background-color: $grey
+      right: -25px
+      top: -18px
+
+  &__line
+    width: 1px
+    height: 51px
+    background-color: $grey
+    margin-top: -10px
+    margin-right: 26.3px
+  &-search
+    
+    max-height: 20px
+    display: flex
+    align-items: center
+  &-signin
+    height: 100%
+    display: flex
+    align-items: center
+    
+    
+
+
+
+
+.signin__text
+  margin-left: 12px
+
+
+
+.search
+  &__button
+    background-color: $white
+    padding: 0
+    margin-right: 11.3px
+
+.subscribe__image
+  height: 44px
+  width: 66px
+  border-top: 3px solid $grey
+  border-right: 3px solid $grey
+  border-left: 3px solid $grey
+  
+  
+
