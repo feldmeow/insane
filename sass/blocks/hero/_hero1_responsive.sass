@@ -1,0 +1,156 @@
+@media (max-width: 1170px)
+  .hero
+    &-container
+      max-width: 87%
+    &-contents
+      max-width: 80%
+    &-content
+      
+      &-in
+        padding-bottom: 50px
+      
+        padding-right: 0
+    &__title
+      font-size: 31px;
+      line-height: 41px;
+      max-width: 70%
+      
+  .tabs
+    &-title
+      padding: 10px 12px
+      text-align: center
+      display: flex
+      align-items: center
+      border-right: 1px solid $grey15
+      
+      
+
+    &__title
+      display: block
+
+    &-items
+      min-width: 150px
+    &__item
+      padding: 10px
+      &:last-child
+        padding-bottom: 10px
+      &-title
+        margin-bottom: 0
+        
+      &::after
+        display: none
+      
+      
+      &-subtitle
+        font-size: 11px;
+        line-height: 16px;
+      &::last-child
+        padding-bottom: 0
+        
+  .with-media-pd
+    padding-bottom: 45px
+@media (max-width: 960px)
+  .hero
+    &-contents
+      max-width: 75%
+    &-content-in
+      background-size: 100% 100% cover
+      padding-bottom: 40px
+      background-position: 100% 
+    &__title
+      font-size: 26px;
+      line-height: 38px;
+      max-width: 50%
+  .tabs
+    &__title
+      font-size: 11px;
+      line-height: 16px
+  .with-media-pd
+    padding-bottom: 35px
+@media (max-width: 840px)
+  .hero
+    &-content-in
+      padding: 20px
+    &__title
+      margin-bottom: 102px
+    &__links
+      flex-direction: column
+      align-items: start
+    &__play
+      order: -1
+      margin-bottom: 20px
+
+    &__button
+      order: 0
+      margin-right: 0
+  .with-media-md
+    margin-bottom: 30px
+@media (max-width: 725px)
+  .hero
+    &-contents
+      max-width: 70%
+    &-container
+      max-width: 95%
+    &__title
+      font-size: 21px
+      line-height: 35px
+      max-width: 30%
+  .tabs
+    &__item
+      &-title
+        font-size: 10px;
+        line-height: 12px
+      &-subtitle
+        font-size: 9px;
+        line-height: 12px
+@media (max-width: 485px)
+  .hero
+    &__avatar
+      width: 30px
+      height: 30px
+      margin-right: 5px
+    &__byname
+      font-size: 9px;
+      line-height: 20px;
+      margin-bottom: 0
+    &__workline
+      font-size: 6px;
+      line-height: 6px;
+    &-contents
+      max-width: 57%
+    &-content
+      &-in
+        padding-left: 10px
+    &__title
+      font-size: 13px;
+      line-height: 24px;
+      max-width: 15%;
+      margin-bottom: 20px
+    &__play
+      margin-left: -12px
+      margin-bottom: 0
+      &-title
+        font-size: 8px;
+        line-height: 13px;
+      &-time
+        font-size: 6px;
+        line-height: 11px
+      &-about
+        margin-left: -15px
+      &-button
+        transform: scale(0.5)
+    &__button
+      transform: scale(0.5)
+      margin-left: -30px
+    &__destinations
+      font-size: 8px;
+      line-height: 10px
+      margin-bottom: 4px
+  .tabs
+    &-title
+      padding: 3px 3px 3px 0
+    &__title
+      transform: translateX(-5px)
+  .with-media-md
+    margin-bottom: 15px
+    

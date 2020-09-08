@@ -1,0 +1,58 @@
+@media (max-width: 1200px)
+  .header
+    &-down
+      justify-content: space-between
+      &__image
+        margin-left: 0
+      &__text
+        margin-right: 0
+    &__logo
+      &-link
+        margin-right: 0
+@media (max-width: 950px)
+  .navbar-menu
+    display: none
+  .header
+    &__menu
+      &-title
+        &::after
+          display: none
+    &__logo
+      &-link
+        transform: translateX(-75px)
+    &-weather
+      display: none
+    &-upper
+      display: none
+    &-sections
+      &--mobile
+        display: flex
+    &-signin
+      &--mobile
+        display: flex
+        height: 100%
+    &__date
+      display: none
+    &-down
+      &__text
+        display: none
+      &__image
+        transform: translateX(-60px)
+    &__image
+      display: none
+    &__subscribe
+      display: none
+@media (max-width: 572px)
+  .header
+    &__menu
+      &-title
+        display: none
+    &-down
+      min-height: 84px
+      &__image
+        display: none
+    &__logo
+      max-width: 140px
+      object-fit: contain
+      &-link
+        transform: translateX(20px)
