@@ -1,0 +1,249 @@
+.cognitively
+  background-color: $gE5
+  padding-bottom: 60px
+  &-container
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    grid-template-rows: minmax(170px, max-content)
+    grid-gap: 30px
+  &-smallcard
+    
+.cars
+  background-color: $white
+  grid-column: span 2
+  grid-row: span 2
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  max-width: 555px
+  min-height: 370px
+  border-radius: 10px
+  overflow: hidden
+  
+  &-content
+    background-image: url(../img/cars-bg.png)
+    background-repeat: no-repeat
+    background-position: right
+    background-size: contain
+    padding: 35px 0 49px 35px
+    border-bottom: 1px solid $grey15
+    
+  &__title
+    max-width: 238px
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: $grey100
+    margin-bottom: 25px
+    mix-blend-mode: luminosity
+    
+    &-type
+      display: block
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      margin-bottom: 20px
+      color: $grey85
+  &__subtitle
+    max-width: 228px
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $grey85
+  &__comment
+    padding: 12px 35px 13px 35px
+    display: flex
+    align-items: center
+    &-avatar
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      margin-right: 10px
+    &-name
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: bold
+      margin-right: 5px
+    &-text
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: $grey85
+      margin-right: 15.75px
+    &-icon
+      display: block
+      margin-right: 5.75px
+      transform: translateY(1.5px)
+    &-count
+      transform: translateY(1px)
+
+.art
+  padding: 18px 18px 25px 18px
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  color: $white
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/art-bg.png)
+  border-radius: 10px
+  background-repeat: no-repeat
+  background-size: cover
+  grid-row: span 2
+  min-height: 370px
+  &__tag
+    position: absolute
+    top: 18px
+    left: 18px
+    padding: 5px 12px
+    background-color: #3DC47E
+    color: $white
+    border-radius: 3px
+    font-size: 12px
+    line-height: 15px
+  &__title
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    margin-bottom: 15px
+    &-type
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 10px
+  &__avatar
+    margin-right: 10px
+  &__author
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &-about
+      
+  &__byname
+    opacity: 0.85 
+    color: $white
+    margin-bottom: 2px  
+  &__about
+    display: flex
+    align-content: center
+  &__date
+    opacity: 0.4
+    display: block
+    margin-right: 10px
+  &-icon
+    
+  &__comment
+    &-icon
+      opacity: 0.4
+      display: block
+      margin-right: 5px
+      transform: translateY(1.5px)
+    &-count
+      margin-right: 10px
+      
+  &__like
+    &-icon
+      opacity: 0.4
+      display: block
+      margin-right: 5px
+      transform: translateY(1px)
+.cat
+  border-radius: 10px
+  max-width: 263px
+  min-height: 370px
+  background-color: $white
+  overflow: hidden
+  grid-row: span 2
+  grid-column: 1
+  &-img
+    object-fit: cover
+    display: block     
+  &-text
+    padding: 15px 25px
+  &__title
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: $grey100
+.columns
+  background-color: $greyblue75
+  color: $white
+  border-radius: 10px
+  min-height: 770px
+  grid-column: 4
+  grid-row: 1/5
+  &__title
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    &-block
+      padding: 20px 25px 19px 25px
+      border-bottom: 1px solid $greyblue50
+      
+  &__readmore
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer
+    &:hover
+      color: $grey30
+      
+
+    &-block
+      padding: 11px 97.5px
+      border-top: 1px solid $greyblue50
+      cursor: pointer
+  &__article
+    padding: 45px 25px 40px 35px
+    position: relative
+    &:not(:last-child)
+      &:after
+        position: absolute
+        content: ''
+        width: 213px
+        height: 1px
+        background-color: $greyblue50
+        left: 25px
+        bottom: 0
+    &-title
+      position: relative
+      z-index: 1
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 15px
+      &::before
+        position: absolute
+        content: url(../img/Quote.svg)
+        top: -10px
+        left: -10px
+        z-index: -1
+  &__avatar
+    margin-right: 10px
+  &__author
+    display: flex
+    &-description
+      display: flex
+      flex-direction: column
+      justify-content: center
+      color: $greyblue25
+  &__byname
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+  &__workline
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
